@@ -7,7 +7,7 @@ function EventsList({events}) {
       <ul className="grid gap-6">
         {events.map((event) => (
           <li key={event.id}>
-            <Link to={`/events/${event.id}`} className="group block bg-slate-800 rounded-xl overflow-hidden hover:ring-2 hover:ring-orange-500 transition-all duration-300 shadow-xl">
+            <Link to={event.id} className="group block bg-slate-800 rounded-xl overflow-hidden hover:ring-2 hover:ring-orange-500 transition-all duration-300 shadow-xl">
               <div className="flex flex-col md:flex-row">
                 <img src={event.image} alt={event.title} className="w-full md:w-64 h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="p-6 flex flex-col justify-center">

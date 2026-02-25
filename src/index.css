@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background-color: #1a1a1a;
+  /* Deep dark background */
+  color: #e2e8f0;
+  /* Light gray text */
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure links don't have default blue styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
